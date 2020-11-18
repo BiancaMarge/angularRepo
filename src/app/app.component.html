@@ -1,0 +1,41 @@
+<p-menubar  [model]="items">
+  <div>
+    <input type="text" pInputText placeholder="Search">
+    <!--<button type="button" pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button>-->
+  </div>
+</p-menubar>
+
+<div style="padding-top: 5em">
+  <p-tabMenu [model]="items1" [activeItem]="activeItem"></p-tabMenu>
+</div>
+
+<section>
+  <div>
+  <div class="container">
+    <div class="col-sm-4">
+      <p>Login to your account</p>
+      <form action="#">
+        <input class="login-form" type="text" placeholder="Name">
+        <input class="login-form" type="email" placeholder="Email Address">
+        <input type="checkbox" class="checkbox" >Keep me singed in
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+  </div>
+    <div class="or-div">
+      <h2 class="or" >OR</h2>
+    </div>
+
+    <div class="col-sm-4">
+      <div>
+        <p>New User Signup!</p>
+        <form action="#">
+          <input class="login-form" type="text" placeholder="Name">
+          <input class="login-form" type="email" placeholder="Email Address">
+          <input class="login-form" type="password" placeholder="Password">
+          <button type="submit" class="btn">Signup</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
